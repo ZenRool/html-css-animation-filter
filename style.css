@@ -120,10 +120,41 @@
 
 .ex-10-icon {
     font-size: 60px;
+
+    animation-name: rotate-10;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
+/* esercizio 10 gira l'icona */
+@keyframes rotate-10 {
+    0% {
+        transform: rotate(360deg);
+    } 
+}
+
 .ex-11-icon {
     font-size: 60px;
+    
+
 }
+/* esercizio 11 hover ruota fino a 3/4 */
+.ex-11-icon:hover {
+    animation-name: rotate-11;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+}
+@keyframes rotate-11 {
+    90% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(0);
+    } 
+}
+
+
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
