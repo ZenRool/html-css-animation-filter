@@ -184,3 +184,75 @@
     width: 60px;
     height: 20px;
 }
+/* esercizio 12 anima i quadratini sul bottone facendogli fare avanti ed indietro */
+.ex-12-button:hover .ex-12-top-white {
+    animation-name: move-12-top;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+
+}
+.ex-12-button:hover .ex-12-bottom-white {
+    animation-name: move-12-bottom;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes move-12-top {
+    50% {
+        left: calc(100% - 60px);
+    }
+}
+@keyframes move-12-bottom {
+    50% {
+        right: calc(100% - 60px);
+    }
+}
+/* esercizio 13 anima i quadratini sul bottone facendogli fare un giro competo*/
+.ex-13-button:hover .ex-13-top-white {
+    animation-name: rotate-13-top;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+
+}
+.ex-13-button:hover .ex-13-bottom-white {
+    animation-name: rotate-13-bottom;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes rotate-13-top {
+    30% {
+        left: calc(100% - 50px);
+        top: -10px;
+    }
+    45% {
+  
+        left: calc(100% - 50px);
+        top: calc(100% - 10px);
+    }
+    75% {
+        left: -10px;
+        top: calc(100% - 10px);
+    }
+    90% {
+        left: -10px;
+        top: -10px;
+    }
+}
+@keyframes rotate-13-bottom {
+    30% {
+        right: calc(100% - 50px);
+        bottom: -10px;
+    }
+    45% {
+
+        right: calc(100% - 50px);
+        bottom: calc(100% - 10px);
+    }
+    75% {
+        right: -10px;
+        bottom: calc(100% - 10px);
+    }
+    90% {
+        right: -10px;
+        bottom: -10px;
+    }
+}
