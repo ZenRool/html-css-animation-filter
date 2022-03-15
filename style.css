@@ -76,11 +76,48 @@
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
 }
+/* esercizio 6 bianco e nero */
+.ex-6-img:hover {
+    filter: grayscale(1);
+}
+
+
+/* esercizio 7 due effetti transizione */
+.ex-7-img {
+    transition: 2s;
+}
+.ex-7-img:hover {
+    filter: grayscale(0.3);
+    filter: sepia(1);
+}
+
+
+/* esercizio 8 come il 7 ma con il bordo */
+.ex-8-img {
+    transition: 2s;
+}
+.ex-8-img:hover {
+    filter: grayscale(0.3);
+    filter: sepia(1);
+    border-radius: 30px;
+}
+
 
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+
+    transition: 2s;
 }
+/* esercizio 9 come 8 ma con ringrandimento */
+.ex-9-img:hover {
+    filter: grayscale(0.3);
+    filter: sepia(1);
+    border-radius: 30px;
+    transform: scale(1.5);
+}
+
+
 .ex-10-icon {
     font-size: 60px;
 }
